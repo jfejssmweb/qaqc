@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA FORMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-100 p-4">
+    <div class="w-full max-w-sm bg-white shadow-lg rounded-lg p-6">
+        <h1 class="text-2xl font-bold text-center mb-4">QA FORMS</h1>
+        
+		<div>
+			<button onclick="toggleDropdown('audit')" class="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold mb-2 focus:outline-none">Process Audit</button>
+			<div id="audit" class="hidden space-y-2 ml-2">
+				<a href="https://form.jotform.com/240668196173060" class="block w-full bg-gray-300 text-black py-2 rounded-lg text-center">Slitting</a>
+				<a href="https://form.jotform.com/240711014990449" class="block w-full bg-gray-300 text-black py-2 rounded-lg text-center">Shearing</a>
+			</div>
+		</div>
+				
+		<!--comment
+        <div>
+            <button onclick="toggleDropdown('inspection')" class="w-full bg-green-500 text-white py-3 rounded-lg font-semibold mb-2 focus:outline-none">B Inspection</button>
+            <div id="inspection" class="hidden space-y-2 ml-2">
+                <button class="w-full bg-gray-300 text-black py-2 rounded-lg">Form A</button>
+                <button class="w-full bg-gray-300 text-black py-2 rounded-lg">Form B</button>
+            </div>
+        </div>
+		-->
+    </div>
+
+    <script>
+        function toggleDropdown(id) {
+            var element = document.getElementById(id);
+            element.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
